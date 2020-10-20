@@ -12,7 +12,7 @@ if(per3==true){
 else if (per5==true){
     alert(num+'buzz')
 }
-else if(per3==true)&&(per5==true){
+else if(per3==true&&per5==true){
     alert(num+'BUZZFIZZ')
 }
 
