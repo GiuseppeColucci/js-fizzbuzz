@@ -1,23 +1,21 @@
 var num=Math.round(Math.random(0)*101);
-console.log(num)
-if(num==100%3){
+var per3=(num*100%3 !=0);
+var per5=(num*100%5 !=1);
+
+
+
+
+
+if(per3==true){
     alert(num+'fizz')
 }
-else if (num==100%5){
+else if (per5==true){
     alert(num+'buzz')
 }
-else if(num==100%5)&&(num==100%3){
-    alert(num+'buzzfizz')
-    
-}
-else{
-    alert(num)
+else if(per3==true)&&(per5==true){
+    alert(num+'BUZZFIZZ')
 }
 
 
 
-// (100%3!=0)=fizz
-// (100%5!=0)=buzz
-// if(x(100%3!=0)&&(100%5!=0){
-//     console.log('FIZZBUZZ')
-// }
+
